@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 
 def ekstraksi_data():
     """
-
     waktu           : 9:00 WIB
     cuaca           :Hujan Ringan
     Temperatur      :25°C
@@ -48,14 +47,7 @@ def ekstraksi_data():
                 kekuatan1 = kekuatan[0:9]
                 kekuatan2 = kekuatan[9:14]
 
-
-
-
-
             i = i + 1
-
-
-
 
 #mencari hasil
         hasil = dict()
@@ -66,7 +58,6 @@ def ekstraksi_data():
         hasil['kelembapan'] = kelembapan
         hasil['kekuatan'] = kekuatan1
         hasil['arah'] = kekuatan2
-
 
         return hasil
     else :
@@ -89,5 +80,3 @@ if __name__ == '__main__' :
     result = ekstraksi_data()
     tampilkan_data(result)
     print('thanks')
-
-
